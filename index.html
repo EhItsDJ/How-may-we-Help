@@ -36,25 +36,44 @@
     <section id="services">
         <h2>Our Services</h2>
         <div class="services-grid">
-            <div class="service">
-                <img src="yard_cleanup.jpg" alt="Yard Cleanup">
-                <h3>Yard Cleanup</h3>
-                <p>We handle leaves, branches, and garden beds to make your yard look fresh!</p>
-            </div>
-            <div class="service">
+            <div class="service" onclick="toggleDetails('snowRemoval')">
                 <img src="snow_removal.jpg" alt="Snow Removal">
                 <h3>Snow Removal</h3>
                 <p>Keep your walkways and driveway clear during the winter months.</p>
+                <div id="snowRemoval" class="service-details">
+                    <p><strong>Pricing:</strong> Starting at $50 per visit.</p>
+                    <p><strong>Details:</strong> Includes driveway, walkways, and entryway clearing.</p>
+                </div>
             </div>
-            <div class="service">
+
+            <div class="service" onclick="toggleDetails('yardCleanup')">
+                <img src="yard_cleanup.jpg" alt="Yard Cleanup">
+                <h3>Yard Cleanup</h3>
+                <p>We handle leaves, branches, and garden beds to make your yard look fresh!</p>
+                <div id="yardCleanup" class="service-details">
+                    <p><strong>Pricing:</strong> Starting at $75 for basic cleanup.</p>
+                    <p><strong>Details:</strong> Includes leaf removal, trimming, and debris pickup.</p>
+                </div>
+            </div>
+
+            <div class="service" onclick="toggleDetails('techRepair')">
                 <img src="tech_repair.jpg" alt="Tech Repair">
                 <h3>Computer & Network Repair</h3>
                 <p>Fixing hardware, software, and networking issues for home or business.</p>
+                <div id="techRepair" class="service-details">
+                    <p><strong>Pricing:</strong> Starting at $100 for diagnostics and minor repairs.</p>
+                    <p><strong>Details:</strong> Includes laptop, desktop, and network troubleshooting.</p>
+                </div>
             </div>
-            <div class="service">
+
+            <div class="service" onclick="toggleDetails('tractorServices')">
                 <img src="tractor_services.jpg" alt="Tractor Services">
                 <h3>Tractor Services</h3>
                 <p>Digging holes, trenches, tree removal, and more with heavy machinery.</p>
+                <div id="tractorServices" class="service-details">
+                    <p><strong>Pricing:</strong> $150/hour for tractor services.</p>
+                    <p><strong>Details:</strong> Includes excavation, trenching, and tree/wood removal.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -84,5 +103,6 @@
         <p>&copy; 2025 XYZ Services | All Rights Reserved</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
